@@ -1,4 +1,6 @@
 function mithrillium(unref, ref) {
+    /* Function that takes in integers of raw mats and refined mats, 
+    and calculates what is needed for mithril ascended mat. */
     var total = 50;
     var multiplier = 2;
     if (ref == 0) {
@@ -31,6 +33,8 @@ function mithrillium(unref, ref) {
 }
 
 function thread(unref, ref) { 
+    /* Function that takes in integers of raw mats and refined mats, 
+    and calculates what is needed for silk thread ascended mat. */
     var total = 100;
     var multiplier = 3; 
     if (ref == 0) {
@@ -63,6 +67,8 @@ function thread(unref, ref) {
 }
 
 function cord(unref, ref) { 
+    /* Function that takes in integers of raw mats and refined mats, 
+    and calculates what is needed for elonian cord ascended mat. */
     var total = 50;
     var multiplier = 4;
     if (ref == 0) {
@@ -95,6 +101,8 @@ function cord(unref, ref) {
 }
 
 function residue(unref, ref) { 
+    /* Function that takes in integers of raw mats and refined mats, 
+    and calculates what is needed for spirit residue ascended mat. */
     var total = 50;
     var multiplier = 3;
     if (ref == 0) {
