@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>GW2 ASC Calculator</title>
+        <meta charset="utf-8">
+        <link href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+        <script src="app.js"></script>       
+    </head>
+    <body bgcolor="#a7c3f2">
+        <form class="asc-material-options" method="POST" onchange="mainfunc()"> 
+            <input id="mithril" type="radio" name="choice"> Mithrillium Lump<br>
+            <input id="silk" type="radio" name="choice"> Weaving Thread<br>
+            <input id="leather" type="radio" name="choice"> Elonian Cord<br>
+            <input id="wood" type="radio" name="choice"> Elder Spirit Residue   
+            </form>
+        <div class="mat-pics">
+            <img src="pictures/mithrillium.png"
+                style="position: absolute; top: -180px; width: 32px; height: 32px; border-radius: 12px;">
+            <img src="pictures/thread.png"
+                style="position: absolute; top: -140px; width: 32px; height: 32px; border-radius: 12px">
+            <img src="pictures/cord.png"
+                style="position: absolute; top: -100px; width: 32px; height: 32px; border-radius: 12px">
+            <img src="pictures/residue.png"
+                style="position: absolute; top: -60px; width: 32px; height: 32px; border-radius: 12px">
+        </div>
+        <span class="section-separator" style="right: 50%"></span>
+        <span class="section-separator" style="left: 50%;"></span>
+        
+        <form class="material-storage" name="mats" method="POST">
+            Amount of Unrefined Materials:<br>
+            <input id="unrefined" type="text" name="unrefined" style="margin: 15px;" oninput="mainfunc()" value="0" required><br>
+            Amount of Refined Materials:<br>
+            <input id="refined" type="text" name="refined" style="margin: 15px;" oninput="mainfunc()" value="0">
+            </form>
+
+        <span class="section-separator" style="right: 50%; top: 537px;"></span>
+        <span class="section-separator" style="left: 50%; top: 537px;"></span>
+        <p id="calculated-output" style="bottom: 50px;"></p>
+        <span class="section-separator" style="right: 50%; top: 612px;"></span>
+        <span class="section-separator" style="left: 50%; top: 612px;"></span>
+        
+    </body>
+</html>
+
+
+

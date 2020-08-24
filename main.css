@@ -1,0 +1,47 @@
+form {
+    text-align: center;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+    margin: 15px;
+}
+
+.asc-material-options {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.material-storage {
+    margin: 150px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.section-separator {
+    position: absolute;
+    top: 250px;
+    width: 25%;
+    height: 2px;
+    border: 2px;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    background: radial-gradient(white, #a7c3f2)
+    
+}
+
+#calculated-output {
+    position: relative;
+    bottom: 112px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 21px;
+}
+
+.mat-pics {
+    position: absolute;
+    left: 830px;
+    /*top: 542.5px;*/
+    width: 16px;
+    height: 16px;
+}
+
+
