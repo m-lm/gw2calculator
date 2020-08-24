@@ -126,21 +126,6 @@ function residue(unref, ref) {
     }
 }
 
-/*function mainfunc(material) {
-    if (material == "mithrillium") {
-        mithrillium(parseInt(document.getElementById('unrefined').value), parseInt(document.getElementById('refined').value))
-    }
-    if (material == "thread") {
-        thread(parseInt(document.getElementById('unrefined').value), parseInt(document.getElementById('refined').value))
-    }
-    if (material == "cord") {
-        cord(parseInt(document.getElementById('unrefined').value), parseInt(document.getElementById('refined').value))
-    }
-    if (material == "residue") {
-        residue(parseInt(document.getElementById('unrefined').value), parseInt(document.getElementById('refined').value))
-    }
-}*/
-
 function mainfunc() {
     // Checks to see which radio button the user has pressed, and takes action accordingly.
     // If there is no numerical value in the input fields, automatically make them 0 so it doesn't glitch out.
@@ -168,13 +153,3 @@ function mainfunc() {
 }
 
 
-
-// Create exception/catch cases, for example: cannot enter words into the unrefined/refined input fields. 
-// Fix it so that if someone backspaces all of the input, it automatically puts 0 in there.
-// Align material selector radio buttons in HTML/CSS.
-// Have the material images light up when their radio button is checked
-
-// This if statement doesn't work due to the last else statement in mainfunc()
-/*if (typeof document.getElementById("unrefined").value != "number") {
-        document.getElementById("calculated-output").innerHTML = "Invalid Input(s)";
-    }*/ 
