@@ -5,7 +5,7 @@ const materials = {
     "thread": {"total": 100, "multiplier": 3},
     "cord": {"total": 50, "multiplier": 4},
     "residue": {"total": 50, "multiplier": 3}
-}
+};
 
 function setDefault(input) {
     if (input.value.trim() === "") {
@@ -17,8 +17,8 @@ function setDefault(input) {
 function compute(material, unref, ref) { 
     /* Function that takes in integers of raw mats and refined mats, 
     and calculates what is needed for ascended material. */
-    let total = materials[material]["total"]
-    let multiplier = materials[material]["multiplier"]
+    let total = materials[material]["total"];
+    let multiplier = materials[material]["multiplier"];
     if (ref <= 0) {
         leftover = 0;
         if (unref >= multiplier) {
@@ -40,14 +40,14 @@ function compute(material, unref, ref) {
         output.innerHTML = "Buy " + calculation + ` ${material}`;
     }
     else if (!isNaN(days)) {
-        output.innerHTML = `You have enough to craft for ${days} ${days > 1 ? "days" : "day"}`
+        output.innerHTML = `You have enough to craft for ${days} ${days > 1 ? "days" : "day"}`;
     }
 }
 
 function main() {
     // Checks to see which radio button the user has pressed, and takes action accordingly.
-    let unref = parseInt(document.getElementById('unrefined').value);
-    let ref = parseInt(document.getElementById('refined').value);
+    let unref = parseInt(document.getElementById("unrefined").value);
+    let ref = parseInt(document.getElementById("refined").value);
     if (document.getElementById("mithril").checked) {
         compute("mithrillium", unref, ref);
     }
