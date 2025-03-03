@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>gw2calculator</title>
+        <meta charset="utf-8">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">gw2calculator</div>
+        <form id="asc-material-options" method="POST" onchange="main()"> 
+            <div class="choice-wrapper">
+                <img class="mat-pics" src="pictures/mithrillium.png">
+                <label>Mithrillium Lump</label>
+                <input id="mithril" type="radio" name="choice">
+            </div>
+            <div class="choice-wrapper">
+                <img class="mat-pics" src="pictures/thread.png">
+                <label>Weaving Thread</label>
+                <input id="silk" type="radio" name="choice">
+            </div>
+            <div class="choice-wrapper">
+                <img class="mat-pics" src="pictures/cord.png">
+                <label>Elonian Cord</label>
+                <input id="leather" type="radio" name="choice">
+            </div>
+            <div class="choice-wrapper">
+                <img class="mat-pics" src="pictures/residue.png">
+                <label>Elder Spirit Residue</label>
+                <input id="wood" type="radio" name="choice">
+            </div>
+            </form>
+        </div>
+        <form class="material-storage" name="mats" method="POST">
+            Amount of Unrefined Materials:<br>
+            <input id="unrefined" class="mat-input" type="text" name="unrefined" onblur="setDefault(this)" oninput="main()" value="0" placeholder="0" required>
+            Amount of Refined Materials:<br>
+            <input id="refined" class="mat-input" type="text" name="refined" onblur="setDefault(this)" oninput="main()" value="0" placeholder="0">
+            </form>
+        <p id="calculated-output"">Choose a material</p>
+        <script src="app.js"></script>       
+    </body>
+</html>
